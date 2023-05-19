@@ -1,4 +1,91 @@
-body{
-    background-color: pink;
-    text-align: center;
+@import url('https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap');
+
+:root {
+  --body-font : 'Lobster Two', cursive;
+  --text-color: #fff;
+  --text-color-hover: rgb(120, 167, 238);
+  ---background-color: rgb(0, 0, 45);
+  --button-bg: rgb(0, 0, 180);
+  ---background-color-opp: #fff;
+  --p: 1.4rem;
+  --small: 0.75rem;
+  --error: rgb(217, 66, 66);
+  --heading-text: 2.4rem;
+  --normal-text: 1.8rem;
+  --padding-inside: 0.1rem;
+  --border-radius: 0.5rem;
+  --text-color-opp: #0e6ec2c4;
+  --box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  --global-transition: all .2s ease-in-out;
+}
+
+html {
+  font-size: var(--normal-text);
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(---background-color);
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 4rem 2rem;
+}
+
+p {
+  margin: 0 0 1.5rem;
+  font-size: var(--p);
+}
+
+h2 {
+  font-size: var(--normal-text);
+  line-height: 1.15;
+  margin: 0 0.5rem;
+}
+
+h3 {
+  font-size: var(--normal-text);
+  line-height: 1.25;
+  margin: 0;
+}
+
+small,
+.form-msg,
+.city_country {
+  font-size: var(--small);
+  line-height: 1.5;
+}
+
+a,
+.notification {
+  color: rgb(255, 255, 0);
+  text-decoration: none;
+  transition: var(--global-transition);
+}
+
+a:hover {
+  color: var(--text-color-hover);
+}
+
+input {
+  outline: none;
+  border-radius: var(--border-radius);
+  border: none;
+  padding: var(--padding-inside);
+}
+
+.form-row button {
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  padding: 0.3rem;
+  border: none;
+  border-radius: var(--border-radius);
+  outline: none;
 }
