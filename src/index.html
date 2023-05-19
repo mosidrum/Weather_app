@@ -2,9 +2,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <title>Weather_App</title>
 </head>
 <body>
-    <h1>Hello webpack!</h1>
+    <div class="notification">
+      <p><small>Check how the weather will be today!!</small></p>
+    </div>
+    <div class="container">
+      <header>
+        <h1>Search Location</h1>
+
+        <form action="#" class="search-form">
+          <label for="searxh-term">Search any where in the world</label>
+          <div class="form-row">
+            <input type="text" placeholder="e.g London" name="search-term" id="search-term" autofocus>
+            <button type="submit">Check</button>
+          </div>
+          <p class="form-msg"></p>
+        </form>
+      </header>
+
+      <section>
+        <ul class="cities">
+          <li>
+            <figure>
+              <img src="../img/weather/01d.svg" alt="">
+              <div>
+                <h2>21<sup>C</sup></h2>
+              </div>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>
+          <small>
+            Designed and coded by <a href="https://github.com/mosidrum">Ayodele Isaac Mosiron</a>
+          </small>
+        </p>
+      </footer>
+    </div>
 </body>
 </html>
