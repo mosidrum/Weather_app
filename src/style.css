@@ -8,11 +8,11 @@
   ---background-color: rgb(0, 0, 45);
   --button-bg: rgb(0, 0, 180);
   ---background-color-opp: #fff;
-  --p: 1.4rem;
-  --small: 0.75rem;
+  --p: 0.8rem;
+  --small: 0.55rem;
   --error: rgb(217, 66, 66);
-  --heading-text: 2.4rem;
-  --normal-text: 1.8rem;
+  --heading-text: 1rem;
+  --normal-text: 1.3rem;
   --padding-inside: 0.1rem;
   --border-radius: 0.5rem;
   --text-color-opp: #0e6ec2c4;
@@ -33,10 +33,11 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  color: var(--text-color);
 }
 
 .container {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
 }
 
 p {
@@ -45,7 +46,7 @@ p {
 }
 
 h2 {
-  font-size: var(--normal-text);
+  font-size: var(--heading-text);
   line-height: 1.15;
   margin: 0 0.5rem;
 }
